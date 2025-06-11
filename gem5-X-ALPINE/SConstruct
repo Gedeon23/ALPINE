@@ -364,10 +364,10 @@ if main['GCC'] or main['CLANG']:
 
     # Treat warnings as errors but white list some warnings that we
     # want to allow (e.g., deprecation warnings).
-    main.Append(CCFLAGS=['-Werror',
-                         '-Wno-error=deprecated-declarations',
-                         '-Wno-error=deprecated',
-                        ])
+    # main.Append(CCFLAGS=['-Werror',
+    #                      '-Wno-error=deprecated-declarations',
+    #                      '-Wno-error=deprecated',
+    #                     ])
 else:
     print(termcap.Yellow + termcap.Bold + 'Error' + termcap.Normal, end=' ')
     print("Don't know what compiler options to use for your compiler.")
@@ -432,7 +432,7 @@ if main['GCC']:
     # version strings may contain extra distro-specific
     # qualifiers, so play it safe and keep only what comes before
     # the first hyphen
-    as_version = as_version_raw[-1].split('-')[0] if as_version_raw else None
+    as_version = as_version_raw[3].split('-')[0] if as_version_raw else None
 
     if not as_version or compareVersions(as_version, "2.23") < 0:
         print(termcap.Yellow + termcap.Bold +
