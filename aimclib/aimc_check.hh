@@ -45,6 +45,7 @@
 #ifndef __AIMC_CHECK_HH__
 #define __AIMC_CHECK_HH__
 
+#include <cstdint>
 #include <iostream>
 #include <vector>
 

@@ -8,6 +8,9 @@
  *
  */
 
+#include <cstdint>
+#include "aimc_intrinsics.hh"
+
 #ifndef __AIMC_DEQUEUE_HH__
 #define __AIMC_DEQUEUE_HH__
 

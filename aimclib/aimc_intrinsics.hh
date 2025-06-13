@@ -20,6 +20,7 @@
  *
  * Arguments: None.
  */
+#include <cstdint>
 inline void
 aimcProcess(int tid = 0)
 {

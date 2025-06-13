@@ -9,6 +9,8 @@
  */
 
 #include "aimc.hh"
+#include <cstdint>
+#include <cstdlib>
 
 int main(int argc, char * argv[])
 {

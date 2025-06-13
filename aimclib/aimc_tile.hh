@@ -6,6 +6,8 @@
  * core using parameter write intrinsics.
  *
  */
+#include <cstdint>
+#include "aimc_intrinsics.hh"
 
 #ifndef __AIMC_TILE_HH__
 #define __AIMC_TILE_HH__

@@ -10,6 +10,7 @@
 #define __AIMC_QUEUE_HH__
 
 // int8_t vector queueing.
+#include <cstdint>
 inline void
 queueVector(int size, int8_t * v, int tid = 0)
 {
